@@ -32,6 +32,22 @@ int main(int argc, char** argv)
    printf("my int variable contains %d\n", *p); 
    printf("var x = %d\n", x);
    printf("p = %p\n", p); // this shows you the address of x!
+
+   p = arr;      // POINTER ARRAY DUALITY
+   *p = 99;
+   p[2] = 777;
+   for (int i=0; i<4; i++)
+      printf("arr[%d] = %d\n", i, arr[i]);
    return 0;
 }
+
+
+
+
+
+
+
+
+
+
 
