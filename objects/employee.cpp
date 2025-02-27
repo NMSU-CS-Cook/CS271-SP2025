@@ -1,7 +1,7 @@
 //
 // C++ Employee class example
 //
-// C++ Class   ==> describing an object that has both data and behavior
+// C++ Class   ==> describes an object that has both data and behavior
 //                ==> putting these together is called ENCAPSULATION
 //                ==> once we do this, we can HIDE our DATA!
 //                ==> public things are the INTERFACE to an object
