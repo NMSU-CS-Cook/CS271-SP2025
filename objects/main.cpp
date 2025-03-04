@@ -4,7 +4,9 @@
 
 #include <iostream>
 #include <string>
-#include "employee.h"  // include Employee class declaration
+#include <vector>
+
+#include "Employee.h"  // include Employee class declaration
 
 void outputEmployee(Employee& emp) // pass by reference parameter (&)
 {                                  // ALWAYS use & on object parameters
@@ -14,6 +16,9 @@ void outputEmployee(Employee& emp) // pass by reference parameter (&)
 
 int main()
 {
+   // Create a vector object to hold Employees
+   std::vector<Employee*> employees;
+   
    // create object and invoke constructor
    Employee jon(800146284,"Jon Cook",1125);
    // use method on the object
@@ -26,6 +31,20 @@ int main()
    joe = new Employee(800937213, "Joe Cool", 1275);  // more like Java
    outputEmployee(*joe);
    joe->printMe(); // MUST USE -> on a pointer to an object
+   
+   employees.push_back(&jon);
+   employees.push_back(joe);
+   std::cout << "Use the vector\n";
+   employees[1]->printMe();
+   employees[0]->printMe();
+   std::cout << "Counting loop:\n";
+   for (int i=0; i < employees.size(); i++) {
+      employees[i]->printMe();
+   }
+   std::cout << "Iterator loop\n";
+   for (Employee* employee : employees) {
+      employee->printMe();
+   }
 }
 
 

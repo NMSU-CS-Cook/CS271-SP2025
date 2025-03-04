@@ -13,15 +13,29 @@
 //
 #include <iostream>
 #include <string>
-#include "employee.h"
+#include "Employee.h"
 
-void Employee::printMe(void) {
+Employee::Employee(int id, std::string name, int wage)
+{
+   this->id = id;      // in C++, this is a pointer!
+   this->name = name;
+   hourlyWage = wage;
+}
+
+void Employee::printMe(void) 
+{
     std::cout << "Employee (" << name << ") ID:" << id 
               << " wage: " << hourlyWage/100.0 << "\n";
 }
 
-void Employee::increaseWage(int amountInPennies) {
+void Employee::increaseWage(int amountInPennies) 
+{
     hourlyWage += amountInPennies;
 }
+
+
+
+
+
 
 
