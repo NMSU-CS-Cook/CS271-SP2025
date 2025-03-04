@@ -1,11 +1,15 @@
 
 //
 //  Plain C Employee structure (data record)
+//  - structured data in non-OO languages let you
+//    created complex data records, but do not let you
+//    include methods in them (which is what objects do)
+//  - this means there is no private/public distinction
 //
 #include <stdio.h>
 #include <stdlib.h>
 
-// typedef int feet; // declares "feet" to be a new type name
+// typedef int feet; // declares "feet" as a new type name, == int
 
 // new data type
 typedef struct Employee {

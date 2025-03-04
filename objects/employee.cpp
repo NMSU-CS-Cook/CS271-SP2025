@@ -8,19 +8,20 @@
 //                ==> public things are the INTERFACE to an object
 //                    private things are the INTERNAL REPRESENTATION 
 //
+// OOP == "Object Oriented Programming"
 // OOP == Encapsulation, Inheritance, Polymorphism
 //
 #include <iostream>
 #include <string>
 #include "employee.h"
 
+void Employee::printMe(void) {
+    std::cout << "Employee (" << name << ") ID:" << id 
+              << " wage: " << hourlyWage/100.0 << "\n";
+}
 
-   void Employee::printMe(void) {
-      std::cout << "Employee (" << name << ") ID:" << id 
-                << " wage: " << hourlyWage/100.0 << "\n";
-   }
-   void Employee::increaseWage(int amountInPennies) {
-      hourlyWage += amountInPennies;
-   }
+void Employee::increaseWage(int amountInPennies) {
+    hourlyWage += amountInPennies;
+}
 
 

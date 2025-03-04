@@ -1,7 +1,10 @@
+//
+// Main program for employee example
+//
 
 #include <iostream>
 #include <string>
-#include "employee.h"
+#include "employee.h"  // include Employee class declaration
 
 void outputEmployee(Employee& emp) // pass by reference parameter (&)
 {                                  // ALWAYS use & on object parameters
