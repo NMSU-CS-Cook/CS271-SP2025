@@ -3,6 +3,7 @@
 **/
 #include <fstream>
 #include "ClassRoster.h"
+#include "StudentAthlete.h"
 
 int main(int argc, char* argv[])
 {
@@ -16,11 +17,14 @@ int main(int argc, char* argv[])
         std::cerr << "Error: file " << argv[1] << " cannot be opened\n";
         return -1;
     }
-    ClassRoster roster;
-    roster.readDataFile(inFile);
+    ClassRoster* roster;
+    roster = new ClassRoster();
+    roster->readDataFile(inFile);
     inFile.close();
-    roster.assignExtraCredit();
-    roster.printStudents();
+    roster->assignExtraCredit();
+    roster->printStudents();
+    // Student Athlete example
+    StudentAthlete diego("Diego", "Pavia", 891, "football");
     return 0;
 }
 

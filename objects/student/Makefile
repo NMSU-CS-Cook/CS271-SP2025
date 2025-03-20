@@ -1,6 +1,6 @@
 
 
-student: main.o Student.o ClassRoster.o
+student: main.o Student.o ClassRoster.o StudentAthlete.o
 	g++ -o $@ $?
 
 Student.o: Student.h
