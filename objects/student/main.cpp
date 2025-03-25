@@ -24,7 +24,11 @@ int main(int argc, char* argv[])
     roster->assignExtraCredit();
     roster->printStudents();
     // Student Athlete example
-    StudentAthlete diego("Diego", "Pavia", 891, "football");
+    StudentAthlete diego("Pavia", "Diego", 891, "football");
+    std::cout << "Student Athlete is " << diego.toString() << "\n";
+    Student* studentPointer;
+    studentPointer = &diego;
+    std::cout << "Diego through pointer: " << studentPointer->toString() << "\n";
     return 0;
 }
 

@@ -12,13 +12,15 @@
 #define STUDENTATHLETE_H
 
 #include <string>
-#include "Student.h"
-
+#include "Student.h"     // StudentAthlete inherits from Student
+                         // Inheritance is an "IS-A" relationship
+                         
 class StudentAthlete : public Student 
 {
   public:
     StudentAthlete(std::string lastName, std::string firstName,
                    int id, std::string sport);
+    virtual std::string toString();
   private:
     std::string sport;
 };
