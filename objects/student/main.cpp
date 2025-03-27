@@ -25,10 +25,10 @@ int main(int argc, char* argv[])
     roster->printStudents();
     // Student Athlete example
     StudentAthlete diego("Pavia", "Diego", 891, "football");
-    std::cout << "Student Athlete is " << diego.toString() << "\n";
+    std::cout << "Student Athlete is " << diego << "\n";
     Student* studentPointer;
     studentPointer = &diego;
-    std::cout << "Diego through pointer: " << studentPointer->toString() << "\n";
+    std::cout << "Diego through pointer: " << *studentPointer << "\n";
     return 0;
 }
 

@@ -14,3 +14,11 @@ std::string StudentAthlete::toString()
           sport + " and majors in " + major;
 }
 
+std::ostream& operator<<(std::ostream& os, const StudentAthlete& student)
+{
+   os <<  student.firstName << " " << student.lastName 
+      <<  " is an athlete in " << student.sport << " and majors in "
+      <<  student.major;
+   return os;
+}
+

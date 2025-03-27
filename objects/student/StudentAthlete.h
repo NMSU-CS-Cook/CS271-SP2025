@@ -21,6 +21,8 @@ class StudentAthlete : public Student
     StudentAthlete(std::string lastName, std::string firstName,
                    int id, std::string sport);
     virtual std::string toString();
+   friend std::ostream& operator<<(std::ostream& os, 
+                                   const StudentAthlete& student);
   private:
     std::string sport;
 };

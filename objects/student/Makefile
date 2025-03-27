@@ -8,5 +8,5 @@ main.o: ClassRoster.h Student.h
 ClassRoster.o: ClassRoster.h Student.h
 
 clean:
-	rm *.o student
+	rm -f *.o student
 

@@ -28,7 +28,7 @@ void ClassRoster::printStudents()
 {
     std::cout << "Data printout for " << students.size() << " students\n";
     for (Student* student: students) {
-        std::cout << "student: (" << student->toString() << ")\n";
+        std::cout << "student: (" << *student << ")\n";
     }
 }
 

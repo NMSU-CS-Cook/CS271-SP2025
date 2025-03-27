@@ -24,5 +24,18 @@ void Student::addExtraCredit(int amount)
    extraCredit += amount;
 }
 
+std::ostream& operator<<(std::ostream& os, const Student& student)
+{
+   os << student.lastName << ", " << student.firstName 
+      << " major:" << student.major 
+      << " id:" << student.id << " extra credit: " << student.extraCredit;
+   return os;
+}
+
+
+
+
+
+
 
 
