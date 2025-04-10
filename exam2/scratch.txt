@@ -1,0 +1,13 @@
+
+vector fleas:
+ [0] : F{x=5, y=0}
+ [1] : F{x=8, y=3}
+ [2] : F{x=11, y=6} <- gob
+ 
+ fob{x=11, y=21}
+ gob.look == 28
+ fob.adjust(28) => fob{x=-73, y=49}
+ 
+ 
+ 
+ 
