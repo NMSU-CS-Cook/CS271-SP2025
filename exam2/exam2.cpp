@@ -55,7 +55,7 @@ class  F: public G
 void useObject(G& gob)
 {
    F fob;
-   gob.printFObject();
+   //gob.printFObject();
    fob.adjust(gob.look());
    std::cout << "F: " << fob.toString() << "\n";
    std::cout << "G: " << gob.toString() << "\n";
@@ -72,7 +72,7 @@ int main(int argc, char* argv[])
    }
    std::cout << "A: " << fleas[1]->toString() << "\n";
    //----------------
-   fleas[2]->printFObject();
+   //fleas[2]->printFObject();
    useObject(*fleas[2]);
    //----------------
    int t=0;
