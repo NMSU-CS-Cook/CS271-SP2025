@@ -7,7 +7,7 @@ class A
       x = a + b;
       y = b - 3;
    }
-   int m1(int* p) {
+   int m1(int* p) { // p->main::y
       if (x < y)
          y = *p;
       else

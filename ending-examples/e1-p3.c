@@ -17,9 +17,9 @@ int* g(int* p1, int* p2)
 
 int main()
 {
-   int a[5];
-   int x;
-   int* p;
+   int a[5];  // {-10,10,7,12,13}
+   int x;     // {21}
+   int* p;    // {&a[3]}
 
    for (v=0; v<5; v++)
       a[v] = v+9;
@@ -33,4 +33,11 @@ int main()
       printf("a[%d] = %d\n",v,a[v]);
    return 0;
 }
+
+
+
+
+
+
+
 
